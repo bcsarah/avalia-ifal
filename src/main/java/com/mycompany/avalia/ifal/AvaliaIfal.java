@@ -4,13 +4,15 @@
 
 package com.mycompany.avalia.ifal;
 
+import com.mycompany.avalia.ifal.view.TelaLogin;
+
 /**
  *
- * @author Ifal
+ * @author Sarah Aurora; Hendrielly Rikelly
  */
 public class AvaliaIfal {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        java.awt.EventQueue.invokeLater(() -> new TelaLogin().setVisible(true));
     }
 }

@@ -1,0 +1,10 @@
+com\mycompany\avalia\ifal\model\Usuario.class
+com\mycompany\avalia\ifal\view\TelaAdmin.class
+com\mycompany\avalia\ifal\view\TelaLogin$1.class
+com\mycompany\avalia\ifal\AvaliaIfal.class
+com\mycompany\avalia\ifal\model\Aluno.class
+com\mycompany\avalia\ifal\view\TelaLogin.class
+com\mycompany\avalia\ifal\view\TelaProfessor.class
+com\mycompany\avalia\ifal\model\Admin.class
+com\mycompany\avalia\ifal\model\Professor.class
+com\mycompany\avalia\ifal\view\TelaAluno.class

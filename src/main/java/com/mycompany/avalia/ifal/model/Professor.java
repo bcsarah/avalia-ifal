@@ -8,6 +8,12 @@ package com.mycompany.avalia.ifal.model;
  *
  * @author Ifal
  */
-public class Professor {
-    
+public class Professor extends Usuario {
+
+    public Professor() {
+        super("prof", "1234", "Professor");
+    }
+
+    @Override
+    public String getPerfil() { return "PROFESSOR"; }
 }
