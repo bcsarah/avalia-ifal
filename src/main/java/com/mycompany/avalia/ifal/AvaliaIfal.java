@@ -6,9 +6,11 @@ package com.mycompany.avalia.ifal;
 
 import com.mycompany.avalia.ifal.view.TelaLogin;
 
-/**
- *
- * @author Sarah Aurora; Hendrielly Rikelly
+/*
+ * @author bcsarah@AvaliaIfal.java
+ * 
+ * Sarah Aurora;
+ * Hendrielly Rikelly
  */
 public class AvaliaIfal {
 

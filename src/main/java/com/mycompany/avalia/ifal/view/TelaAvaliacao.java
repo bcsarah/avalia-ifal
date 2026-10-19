@@ -6,16 +6,16 @@ package com.mycompany.avalia.ifal.view;
 
 /**
  *
- * @author Ifal
+ * @author bcsarah
  */
-public class TelaAluno extends javax.swing.JFrame {
+public class TelaAvaliacao extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(TelaAluno.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(TelaAvaliacao.class.getName());
 
     /**
-     * Creates new form TelaAluno
+     * Creates new form TelaAvaliacao
      */
-    public TelaAluno() {
+    public TelaAvaliacao() {
         initComponents();
     }
 
@@ -66,7 +66,7 @@ public class TelaAluno extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new TelaAluno().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new TelaAvaliacao().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
