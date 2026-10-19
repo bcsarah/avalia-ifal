@@ -28,56 +28,56 @@ public class TelaProfessor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        BotaoDesempenhoDaTurma = new javax.swing.JButton();
+        BotaoSair = new javax.swing.JButton();
+        BotaoMinhasQuestoes = new javax.swing.JButton();
+        BotaoResultados = new javax.swing.JButton();
+        BotaoRankingDasQuestoes = new javax.swing.JButton();
+        BotaoAlterarMinhaSenha = new javax.swing.JButton();
+        BotaoMinhasDisciplinas = new javax.swing.JButton();
+        BotaoCadastrarQuestoes = new javax.swing.JButton();
+        BotaoMinhasAvaliacoes = new javax.swing.JButton();
+        TituloProfessor = new javax.swing.JLabel();
+        TituloNomeDoProfessor = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton7.setText("[6] Desempenho da Turma");
+        BotaoDesempenhoDaTurma.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BotaoDesempenhoDaTurma.setText("[6] Desempenho da Turma");
 
-        jButton8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton8.setText("[0] Sair");
-        jButton8.addActionListener(this::jButton8ActionPerformed);
+        BotaoSair.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BotaoSair.setText("[0] Sair");
+        BotaoSair.addActionListener(this::BotaoSairActionPerformed);
 
-        jButton9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton9.setText("[3] Minhas Questões");
-        jButton9.setActionCommand("[3] Disciplinas");
+        BotaoMinhasQuestoes.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BotaoMinhasQuestoes.setText("[3] Minhas Questões");
+        BotaoMinhasQuestoes.setActionCommand("[3] Disciplinas");
 
-        jButton10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton10.setText("[5] Resultados");
-        jButton10.addActionListener(this::jButton10ActionPerformed);
+        BotaoResultados.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BotaoResultados.setText("[5] Resultados");
+        BotaoResultados.addActionListener(this::BotaoResultadosActionPerformed);
 
-        jButton11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton11.setText("[7] Ranking de Questões");
+        BotaoRankingDasQuestoes.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BotaoRankingDasQuestoes.setText("[7] Ranking de Questões");
 
-        jButton12.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton12.setText("[8] Alterar minha senha");
+        BotaoAlterarMinhaSenha.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BotaoAlterarMinhaSenha.setText("[8] Alterar minha senha");
 
-        jButton13.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton13.setText("[1] Minhas Disciplinas");
+        BotaoMinhasDisciplinas.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BotaoMinhasDisciplinas.setText("[1] Minhas Disciplinas");
 
-        jButton14.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton14.setText("[2] Cadastrar Questão");
-        jButton14.addActionListener(this::jButton14ActionPerformed);
+        BotaoCadastrarQuestoes.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BotaoCadastrarQuestoes.setText("[2] Cadastrar Questão");
+        BotaoCadastrarQuestoes.addActionListener(this::BotaoCadastrarQuestoesActionPerformed);
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton1.setText("[4] Minhas Avaliações");
+        BotaoMinhasAvaliacoes.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        BotaoMinhasAvaliacoes.setText("[4] Minhas Avaliações");
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("Professor");
+        TituloProfessor.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        TituloProfessor.setText("Professor");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel2.setText("Nome: ");
+        TituloNomeDoProfessor.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        TituloNomeDoProfessor.setText("Nome: ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -87,68 +87,68 @@ public class TelaProfessor extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(209, 209, 209)
-                        .addComponent(jButton8))
+                        .addComponent(BotaoSair))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(26, 26, 26)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
+                            .addComponent(TituloNomeDoProfessor)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(BotaoRankingDasQuestoes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(BotaoMinhasDisciplinas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(BotaoMinhasQuestoes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(BotaoResultados, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jLabel1))))
+                                    .addComponent(BotaoDesempenhoDaTurma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(BotaoAlterarMinhaSenha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(BotaoMinhasAvaliacoes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(BotaoCadastrarQuestoes, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(TituloProfessor))))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(21, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(TituloProfessor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                .addComponent(TituloNomeDoProfessor)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton13)
-                    .addComponent(jButton14))
+                    .addComponent(BotaoMinhasDisciplinas)
+                    .addComponent(BotaoCadastrarQuestoes))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton9))
+                    .addComponent(BotaoMinhasAvaliacoes)
+                    .addComponent(BotaoMinhasQuestoes))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7)
-                    .addComponent(jButton10))
+                    .addComponent(BotaoDesempenhoDaTurma)
+                    .addComponent(BotaoResultados))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton11)
-                    .addComponent(jButton12))
+                    .addComponent(BotaoRankingDasQuestoes)
+                    .addComponent(BotaoAlterarMinhaSenha))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton8)
+                .addComponent(BotaoSair)
                 .addGap(35, 35, 35))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void BotaoSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSairActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_BotaoSairActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void BotaoResultadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoResultadosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_BotaoResultadosActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void BotaoCadastrarQuestoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCadastrarQuestoesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
+    }//GEN-LAST:event_BotaoCadastrarQuestoesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -176,21 +176,21 @@ public class TelaProfessor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
+    private javax.swing.JButton BotaoAlterarMinhaSenha;
+    private javax.swing.JButton BotaoCadastrarQuestoes;
+    private javax.swing.JButton BotaoDesempenhoDaTurma;
+    private javax.swing.JButton BotaoMinhasAvaliacoes;
+    private javax.swing.JButton BotaoMinhasDisciplinas;
+    private javax.swing.JButton BotaoMinhasQuestoes;
+    private javax.swing.JButton BotaoRankingDasQuestoes;
+    private javax.swing.JButton BotaoResultados;
+    private javax.swing.JButton BotaoSair;
+    private javax.swing.JLabel TituloNomeDoProfessor;
+    private javax.swing.JLabel TituloProfessor;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
