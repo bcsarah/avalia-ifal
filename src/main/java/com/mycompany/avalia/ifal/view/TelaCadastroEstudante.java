@@ -58,7 +58,7 @@ public class TelaCadastroEstudante extends javax.swing.JFrame {
 
         jLabel7.setText("Matrícula:");
 
-        jLabel8.setText("Senha");
+        jLabel8.setText("Senha:");
 
         jLabel9.setText("CPF:");
 

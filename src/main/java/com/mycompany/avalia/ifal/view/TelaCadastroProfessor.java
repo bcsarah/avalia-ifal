@@ -56,7 +56,7 @@ public class TelaCadastroProfessor extends javax.swing.JFrame {
 
         jLabel7.setText("Matrícula (SIAPE):");
 
-        jLabel8.setText("Senha");
+        jLabel8.setText("Senha:");
 
         jLabel9.setText("CPF:");
 
