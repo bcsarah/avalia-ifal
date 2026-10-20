@@ -58,7 +58,6 @@ public class TelaAdmin extends javax.swing.JFrame {
 
         BotaoDisciplina.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         BotaoDisciplina.setText("[3] Disciplinas");
-        BotaoDisciplina.setActionCommand("[3] Disciplinas");
 
         BotaoTurmas.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         BotaoTurmas.setText("[4] Turmas");
@@ -90,7 +89,7 @@ public class TelaAdmin extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(16, 16, 16)
+                .addContainerGap(16, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(TituloAdministrador)
                     .addGroup(layout.createSequentialGroup()
@@ -109,12 +108,12 @@ public class TelaAdmin extends javax.swing.JFrame {
                             .addComponent(BotaoProfessores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(BotaoGerenciamentoDeUsuarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(BotaoSair, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(16, 16, 16)
+                .addContainerGap(16, Short.MAX_VALUE)
                 .addComponent(TituloAdministrador)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)

@@ -24,35 +24,32 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
+              <EmptySpace pref="26" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="209" max="-2" attributes="0"/>
-                      <Component id="BotaoSair" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="TituloNomeDoProfessor" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="BotaoRankingDasQuestoes" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="BotaoMinhasDisciplinas" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="BotaoMinhasQuestoes" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="BotaoResultados" alignment="0" min="-2" pref="225" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="BotaoDesempenhoDaTurma" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="BotaoAlterarMinhaSenha" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="BotaoMinhasAvaliacoes" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="BotaoCadastrarQuestoes" alignment="0" min="-2" pref="240" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Component id="TituloProfessor" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="TituloNomeDoProfessor" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="BotaoRankingDasQuestoes" alignment="0" max="32767" attributes="0"/>
+                          <Component id="BotaoMinhasDisciplinas" alignment="0" max="32767" attributes="0"/>
+                          <Component id="BotaoMinhasQuestoes" alignment="0" max="32767" attributes="0"/>
+                          <Component id="BotaoResultados" alignment="0" min="-2" pref="225" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="BotaoDesempenhoDaTurma" alignment="0" max="32767" attributes="0"/>
+                          <Component id="BotaoAlterarMinhaSenha" alignment="0" max="32767" attributes="0"/>
+                          <Component id="BotaoMinhasAvaliacoes" alignment="0" max="32767" attributes="0"/>
+                          <Component id="BotaoCadastrarQuestoes" alignment="0" min="-2" pref="240" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <Component id="TituloProfessor" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="24" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="BotaoSair" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -85,7 +82,7 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="BotaoSair" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace pref="35" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
