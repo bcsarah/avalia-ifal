@@ -84,6 +84,7 @@ public class TelaAdmin extends javax.swing.JFrame {
 
         BotaoSair.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         BotaoSair.setText("[0] Sair");
+        BotaoSair.addActionListener(this::BotaoSairActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -147,7 +148,8 @@ public class TelaAdmin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotaoQuestoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoQuestoesActionPerformed
-        // TODO add your handling code here:
+        new TelaCadastroQuestao().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BotaoQuestoesActionPerformed
 
     private void BotaoProfessoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoProfessoresActionPerformed
@@ -159,6 +161,11 @@ public class TelaAdmin extends javax.swing.JFrame {
         new TelaCadastroEstudante().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_BotaoEstudantesActionPerformed
+
+    private void BotaoSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSairActionPerformed
+        new TelaLogin().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_BotaoSairActionPerformed
 
     /**
      * @param args the command line arguments
