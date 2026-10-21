@@ -161,6 +161,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="[1] Estudantes"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotaoEstudantesActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="TituloAdministrador">
       <Properties>

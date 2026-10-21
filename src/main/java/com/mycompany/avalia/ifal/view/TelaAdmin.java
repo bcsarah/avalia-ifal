@@ -68,6 +68,7 @@ public class TelaAdmin extends javax.swing.JFrame {
 
         BotaoEstudantes.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         BotaoEstudantes.setText("[1] Estudantes");
+        BotaoEstudantes.addActionListener(this::BotaoEstudantesActionPerformed);
 
         TituloAdministrador.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         TituloAdministrador.setText("Administrador");
@@ -150,8 +151,14 @@ public class TelaAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_BotaoQuestoesActionPerformed
 
     private void BotaoProfessoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoProfessoresActionPerformed
-        // TODO add your handling code here:
+        new TelaCadastroProfessor().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BotaoProfessoresActionPerformed
+
+    private void BotaoEstudantesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoEstudantesActionPerformed
+        new TelaCadastroEstudante().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_BotaoEstudantesActionPerformed
 
     /**
      * @param args the command line arguments

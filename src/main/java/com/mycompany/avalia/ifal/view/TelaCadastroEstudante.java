@@ -77,6 +77,11 @@ public class TelaCadastroEstudante extends javax.swing.JFrame {
         ProfessoresCadastrados.setViewportView(jTextArea1);
 
         BotaoSalvar.setText("Salvar");
+        BotaoSalvar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoSalvarActionPerformed(evt);
+            }
+        });
 
         BotaoAlterar.setText("Alterar");
 
@@ -85,6 +90,11 @@ public class TelaCadastroEstudante extends javax.swing.JFrame {
         BotaoExcluir.setText("Excluir");
 
         BotaoLimpar.setText("Limpar");
+        BotaoLimpar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoLimparActionPerformed(evt);
+            }
+        });
 
         BotaoFechar.setText("Fechar");
         BotaoFechar.addActionListener(new java.awt.event.ActionListener() {
@@ -188,6 +198,34 @@ public class TelaCadastroEstudante extends javax.swing.JFrame {
     private void BotaoFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoFecharActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BotaoFecharActionPerformed
+
+    private void BotaoSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSalvarActionPerformed
+        String nome = InputNome.getText().trim();
+        String matricula = InputMatricula.getText().trim();
+
+        if (nome.isEmpty() || matricula.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(
+                this,
+                "Preencha o nome e a matrícula.",
+                "Campos obrigatórios",
+                javax.swing.JOptionPane.ERROR_MESSAGE
+            );
+        } else {
+            javax.swing.JOptionPane.showMessageDialog(
+                this,
+                "Cadastro realizado!"
+            );
+        }
+    }//GEN-LAST:event_BotaoSalvarActionPerformed
+
+    private void BotaoLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoLimparActionPerformed
+        InputNome.setText("");
+        InputMatricula.setText("");
+        InputCPF.setText("");
+        InputSenha.setText("");
+        ComboTurma.setSelectedIndex(-1);
+        CheckAtivo.setSelected(false);
+    }//GEN-LAST:event_BotaoLimparActionPerformed
 
     /**
      * @param args the command line arguments
