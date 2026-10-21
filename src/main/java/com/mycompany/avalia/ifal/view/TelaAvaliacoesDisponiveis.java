@@ -20,11 +20,11 @@ public class TelaAvaliacoesDisponiveis extends javax.swing.JFrame {
         
         BotaoIniciar.setEnabled(false);
 
-        TabelaAvaliacoes.getSelectionModel()
+        jTable1.getSelectionModel()
             .addListSelectionListener(e -> {
                 if (!e.getValueIsAdjusting()) {
                     BotaoIniciar.setEnabled(
-                        TabelaAvaliacoes.getSelectedRow() != -1
+                        jTable1.getSelectedRow() != -1
                     );
                 }
             });
@@ -48,21 +48,30 @@ public class TelaAvaliacoesDisponiveis extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Avaliação", "Disciplina", "Duração"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                true, true, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         TabelaAvaliacoes.setViewportView(jTable1);
 
         Titulo.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
         Titulo.setText("Avaliações Disponíveis");
 
         BotaoIniciar.setText("Iniciar");
+        BotaoIniciar.addActionListener(this::BotaoIniciarActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -91,6 +100,11 @@ public class TelaAvaliacoesDisponiveis extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BotaoIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoIniciarActionPerformed
+        new TelaAvaliacao().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_BotaoIniciarActionPerformed
 
     /**
      * @param args the command line arguments

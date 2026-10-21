@@ -63,6 +63,11 @@ public class TelaAvaliacao extends javax.swing.JFrame {
         TituloQuestao.setText("Questão");
 
         RadioAlternativaA.setText("A)");
+        RadioAlternativaA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RadioAlternativaAActionPerformed(evt);
+            }
+        });
 
         RadioAlternativaB.setText("B)");
         RadioAlternativaB.addActionListener(new java.awt.event.ActionListener() {
@@ -164,6 +169,10 @@ public class TelaAvaliacao extends javax.swing.JFrame {
     private void RadioAlternativaCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioAlternativaCActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_RadioAlternativaCActionPerformed
+
+    private void RadioAlternativaAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioAlternativaAActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RadioAlternativaAActionPerformed
 
     /**
      * @param args the command line arguments
