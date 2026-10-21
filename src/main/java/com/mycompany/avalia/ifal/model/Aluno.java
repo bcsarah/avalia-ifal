@@ -1,19 +1,48 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.avalia.ifal.model;
 
-/**
- *
- * @author Ifal
- */
 public class Aluno extends Usuario {
+
+    private String matricula;
+    private String turma;
 
     public Aluno() {
         super("aluno", "1234", "Aluno");
+        this.matricula = "";
+        this.turma = "";
+    }
+
+    public Aluno(String login, String senha, String nome,
+                 String matricula, String cpf, String turma,
+                 boolean ativo) {
+        super(login, senha, nome, cpf, ativo);
+        this.matricula = matricula;
+        this.turma = turma;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getTurma() {
+        return turma;
+    }
+
+    public void setTurma(String turma) {
+        this.turma = turma;
     }
 
     @Override
-    public String getPerfil() { return "ALUNO"; }
+    public String getPerfil() {
+        return "ALUNO";
+    }
+
+    @Override
+    public String toString() {
+        return nome + " - " + matricula;
+    }
 }

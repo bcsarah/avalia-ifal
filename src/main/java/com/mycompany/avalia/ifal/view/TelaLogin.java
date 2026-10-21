@@ -4,6 +4,9 @@
  */
 package com.mycompany.avalia.ifal.view;
 
+import com.mycompany.avalia.ifal.model.DadosIniciais;
+import com.mycompany.avalia.ifal.model.Usuario;
+
 /**
  *
  * @author Ifal
@@ -137,12 +140,50 @@ public class TelaLogin extends javax.swing.JFrame {
                 "Campos obrigatórios",
                 javax.swing.JOptionPane.ERROR_MESSAGE
             );
-        } else {
+            return;
+        }
+
+        Usuario usuarioAutenticado = null;
+
+        for (Usuario usuario : DadosIniciais.criarUsuarios()) {
+            if (usuario.autenticar(login, senha)) {
+                usuarioAutenticado = usuario;
+                break;
+            }
+        }
+
+        if (usuarioAutenticado == null) {
             javax.swing.JOptionPane.showMessageDialog(
                 this,
-                "Bem-vindo(a), " + login + "!"
+                "Login ou senha incorretos.",
+                "Falha na autenticação",
+                javax.swing.JOptionPane.ERROR_MESSAGE
             );
+            return;
         }
+
+        switch (usuarioAutenticado.getPerfil()) {
+            case "ADMIN" ->
+                new TelaAdmin().setVisible(true);
+
+            case "PROFESSOR" ->
+                new TelaProfessor().setVisible(true);
+
+            case "ALUNO" ->
+                new TelaAvaliacoesDisponiveis().setVisible(true);
+
+            default -> {
+                javax.swing.JOptionPane.showMessageDialog(
+                    this,
+                    "Perfil de usuário não reconhecido.",
+                    "Erro",
+                    javax.swing.JOptionPane.ERROR_MESSAGE
+                );
+                return;
+            }
+        }
+
+        this.dispose();
     }//GEN-LAST:event_EntrarActionPerformed
 
     private void InputSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InputSenhaActionPerformed
